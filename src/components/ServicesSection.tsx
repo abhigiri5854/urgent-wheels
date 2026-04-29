@@ -1,42 +1,66 @@
 import {
   AirVent,
+  CalendarClock,
   HeartPulse,
-  Route,
-  ShieldCheck,
-  Zap,
+  Plane,
+  Refrigerator,
+  ShieldPlus,
+  Siren,
+  Snowflake,
   Cross,
+  Truck,
 } from "lucide-react";
 
 const services = [
   {
-    title: "ICU Ambulance",
-    desc: "Critical care support with ICU-ready equipment and monitoring.",
-    icon: ShieldCheck,
+    title: "Air Ambulance Service",
+    desc: "Rapid critical transfer via air ambulance for long-distance emergencies.",
+    icon: Plane,
   },
   {
-    title: "Ventilator Ambulance",
-    desc: "Ventilator support and respiratory monitoring for emergency cases.",
+    title: "ICU & Ventilator Ambulance",
+    desc: "Critical care setup with ICU monitoring and ventilator support.",
     icon: AirVent,
   },
   {
-    title: "Cardiac Ambulance",
-    desc: "Cardiac-ready transport with trained teams for heart emergencies.",
+    title: "Dead Body Ambulance Service",
+    desc: "Respectful and timely dead body transfer with professional handling.",
+    icon: Cross,
+  },
+  {
+    title: "Dead Body Freezer Box Ambulance",
+    desc: "Freezer box ambulance support for preservation and transport.",
+    icon: Snowflake,
+  },
+  {
+    title: "Out of Station Ambulance",
+    desc: "Delhi to UP, Bihar, Bangal, Jharkhand and all over India.",
+    icon: Truck,
+  },
+  {
+    title: "Hearse Van Ambulance Service",
+    desc: "Hearse van service available with 24 hours support.",
+    icon: Siren,
+  },
+  {
+    title: "Mobile Mortuary Ambulance Service",
+    desc: "Mobile mortuary ambulance with proper temperature-ready support.",
+    icon: Refrigerator,
+  },
+  {
+    title: "Ambulance for Event or Shows",
+    desc: "Ambulance support for live shows, events and public gatherings.",
+    icon: CalendarClock,
+  },
+  {
+    title: "Emergency & Oxygen Ambulance",
+    desc: "Fast emergency response with oxygen support for urgent cases.",
     icon: HeartPulse,
   },
   {
-    title: "Emergency Ambulance",
-    desc: "Fast dispatch for accidents, severe injuries, and urgent medical needs.",
-    icon: Zap,
-  },
-  {
-    title: "Hospital Transfer",
-    desc: "Safe inter-hospital transfer with clear coordination and documentation.",
-    icon: Route,
-  },
-  {
-    title: "Dead Body Ambulance",
-    desc: "Respectful and timely transport with professional handling.",
-    icon: Cross,
+    title: "AC Ambulance Service",
+    desc: "Comfort-focused AC ambulance with trained on-route support.",
+    icon: ShieldPlus,
   },
 ];
 
@@ -48,11 +72,12 @@ export default function ServicesSection() {
           Services
         </div>
         <h2 className="mt-4 text-balance text-2xl font-extrabold leading-[1.15] tracking-tight md:text-3xl">
-          Ambulances for every emergency need
+          Our Services
         </h2>
         <p className="mt-3 max-w-2xl text-sm leading-relaxed text-brand-muted md:text-base">
-          Choose the right ambulance—ICU, ventilator, cardiac, and more—dispatch
-          is built for speed across Delhi NCR.
+          Dead Body Freezer Box Ambulance, Dead Body Ambulance, ICU Ventilator
+          Ambulance, AC Ambulance, Oxygen Ambulance, Emergency Ambulance,
+          Outside Ambulance, Freezer Box, Hearse Van, Mortuary Ambulance.
         </p>
       </div>
 
@@ -81,6 +106,23 @@ export default function ServicesSection() {
             </a>
           );
         })}
+      </div>
+
+      <div className="mt-6 rounded-2xl border border-brand-red/20 bg-brand-red/5 p-5">
+        <div className="text-sm font-bold text-brand-dark">
+          Following are the kinds of Ambulance Services Available at Urgent
+          Wheels in Delhi:
+        </div>
+        <ul className="mt-3 grid list-disc gap-2 pl-5 text-sm text-brand-dark md:grid-cols-2">
+          <li>Air Ambulance Service</li>
+          <li>ICU & Ventilator Ambulance</li>
+          <li>Dead Body Ambulance Service</li>
+          <li>Dead Body Freezer Box Ambulance Service</li>
+          <li>Out of Station Ambulance Service</li>
+          <li>Hearse Van Ambulance Service</li>
+          <li>Mobile Mortuary Ambulance Service</li>
+          <li>Ambulance for event or shows (live shows)</li>
+        </ul>
       </div>
     </section>
   );

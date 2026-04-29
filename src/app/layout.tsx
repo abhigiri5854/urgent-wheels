@@ -10,6 +10,7 @@ import {
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import StickyEmergencyBar from "@/components/StickyEmergencyBar";
+import TopInfoStrip from "@/components/TopInfoStrip";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -84,6 +85,7 @@ export default function RootLayout({
         >
           Skip to content
         </a>
+        <TopInfoStrip />
         <Navbar />
         <StickyEmergencyBar />
         <main id="main" className="flex-1">

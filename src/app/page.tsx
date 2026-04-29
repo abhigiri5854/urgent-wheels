@@ -7,6 +7,7 @@ import FacilitiesGallerySection from "@/components/FacilitiesGallerySection";
 import HeroSection from "@/components/HeroSection";
 import ServicesSection from "@/components/ServicesSection";
 import SpecializedICUSection from "@/components/SpecializedICUSection";
+import WelcomeNoteSection from "@/components/WelcomeNoteSection";
 import WhyChooseUsSection from "@/components/WhyChooseUsSection";
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <HeroSection />
 
       <div className="bg-white">
+        <WelcomeNoteSection />
         <FacilitiesGallerySection />
         <AboutSection />
         <WhyChooseUsSection />

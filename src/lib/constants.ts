@@ -28,7 +28,7 @@ export const WHATSAPP_NUMBER_E164 = EMERGENCY_PHONE_1; // digits only, used in w
 
 export const CITY = "Delhi, India";
 export const HERO_IMAGE_URL =
-  "/facilities/facility-01.png";
+  "/facilities/air-ambulance.png";
 
 export const RESPONSE_TIME = {
   minMinutes: 15,
@@ -49,6 +49,7 @@ export const EMAIL = "urgentwheelsdelhi@gmail.com";
 export const EMAIL_LINK = `mailto:${EMAIL}`;
 
 export const FACILITY_IMAGE_PATHS = [
+  "/facilities/air-ambulance.png",
   "/facilities/facility-01.png",
   "/facilities/facility-02.png",
   "/facilities/facility-03.png",

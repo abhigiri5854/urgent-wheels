@@ -47,3 +47,28 @@ html {
     scroll-behavior: auto;
   }
 }
+
+@keyframes strip-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.strip-mask {
+  mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+}
+
+.strip-track {
+  display: inline-block;
+  min-width: max-content;
+  animation: strip-scroll 24s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .strip-track {
+    animation: none;
+  }
+}

@@ -11,18 +11,18 @@ import {
 export default function HeroSection() {
   return (
     <section className="relative overflow-hidden bg-brand-red/5">
-      <div className="absolute inset-0" aria-hidden="true">
+      <div className="absolute inset-0 z-0" aria-hidden="true">
         <div
-          className="absolute inset-0 scale-110 bg-cover bg-center blur-2xl"
+          className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: `url(${HERO_IMAGE_URL})` }}
         />
-        <div className="absolute inset-0 bg-black/80" />
+        <div className="absolute inset-0 bg-black/70 md:bg-black/65" />
       </div>
 
-      <div className="relative mx-auto w-full max-w-6xl px-4 pb-10 pt-10 md:pb-14 md:pt-16">
+      <div className="relative z-10 mx-auto w-full max-w-6xl px-4 pb-10 pt-10 md:pb-14 md:pt-16">
         <div className="grid gap-8 md:grid-cols-2 md:items-center">
           <div className="text-white">
-            <div className="inline-flex flex-wrap items-center gap-2 rounded-full  border border-white/30 bg-black/40 px-4 py-2-xs font-semibold tracking-wide">
+            <div className="inline-flex flex-wrap items-center gap-2 rounded-full border border-white/30 bg-black/40 px-4 py-2 text-xs font-semibold tracking-wide">
               <span className="inline-flex items-center gap-2">
                 <span className="h-2 w-2 rounded-full bg-brand-red" aria-hidden />
                 24/7 Emergency Support
@@ -79,7 +79,7 @@ export default function HeroSection() {
             </div>
           </div>
 
-          <div className="relative">
+          <div className="relative z-10">
             <div className="sticky top-24 rounded-3xl border border-white/20 bg-black/50 p-4 backdrop-blur md:p-6">
               <div className="flex items-start justify-between gap-4">
                 <div>
